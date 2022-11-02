@@ -1,0 +1,13 @@
+{% load django_vite %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% vite_hmr_client %}
+    {% vite_asset 'js/main.js' %}
+    {% block inertia_head %}{{head|safe}}{% endblock inertia_head %}
+</head>
+<body>
+{% block inertia %}{% endblock %}
+</body>
+</html>

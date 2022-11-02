@@ -1,0 +1,15 @@
+// Variable overrides first
+$primary: #42b883;
+$enable-shadows: true;
+$prefix: "mo-";
+$box-shadow-lg:               0 1rem 3rem rgba($primary, .175);
+
+// Then import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+:root {
+  color: rgba(255, 255, 255, 0.87);
+  background-color: $dark;
+}
+#app {
+  background-color: $dark;
+}
